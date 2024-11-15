@@ -49,7 +49,7 @@ body {
 
 .bag-description {
     position: absolute;
-    width: 15%;
+    width: 150px;
     opacity: 0;
     transition: opacity 1s ease;
 }
