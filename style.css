@@ -78,7 +78,7 @@ body {
 }
 
 .bag-description4 {
-    transform: translate(65px, -220px);
+    transform: translate(60px, -220px);
 }  
 
 
@@ -86,8 +86,8 @@ body {
 .bag-description5 {
     top: 50%;
     left: 50%;
-    width: 400px;
-    height: 650px;
+    width: 350px;
+    height: 580px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     transform: translate(-50%, -50%);
