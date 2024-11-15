@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: "Playfair Display",serif;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
