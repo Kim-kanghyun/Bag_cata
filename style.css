@@ -9,6 +9,10 @@ p{
     font-family: "Playfair Display",serif;
 }
 
+#map{
+    width:270px;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
