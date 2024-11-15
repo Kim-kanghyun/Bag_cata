@@ -79,6 +79,16 @@ body {
     left: 15%;
 }
 
+.bag-description4 {
+    top: 17%; /* Custom position for page 4 */
+    left: 0.8%;
+}
+
+.bag-description5 {
+    top: 30%; /* Custom position for page 5 */
+    left: 15%;
+}
+
 .line1 {
     position: absolute;
     top: 45%;
