@@ -15,12 +15,14 @@ body {
     overflow: hidden;
 }
 
+
 .slider {
     display: flex;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* 부드럽게 스크롤 되도록 설정 */
 }
 
 .slide {
