@@ -1,24 +1,28 @@
 const slider = document.querySelector('.slider');
 let startX;
-let currentIndex = 0;
+let isDragging = false;
 
 slider.addEventListener("touchstart", touchStart);
+slider.addEventListener("touchmove", touchMove);
 slider.addEventListener("touchend", touchEnd);
 
 function touchStart(event) {
     startX = event.touches[0].clientX;
+    isDragging = true;
 }
 
-function touchEnd(event) {
-    const slideWidth = slider.offsetWidth;
-    const deltaX = startX - event.changedTouches[0].clientX;
+function touchMove(event) {
+    if (!isDragging) return;
+    const currentX = event.touches[0].clientX;
+    const deltaX = startX - currentX;
 
-    // 슬라이드 변경을 위한 임계값 (필요 시 조정 가능)
-    if (Math.abs(deltaX) > slideWidth / 4) {
-        currentIndex += deltaX > 0 ? 1 : -1;
-        currentIndex = Math.max(0, Math.min(currentIndex, slider.children.length - 1));
-        slider.scrollLeft = currentIndex * slideWidth;
-    }
+    // 슬라이드를 따라 이동하게끔 하는 효과
+    slider.scrollLeft += deltaX;
+    startX = currentX;
+}
+
+function touchEnd() {
+    isDragging = false;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
