@@ -2,7 +2,7 @@ const slider = document.querySelector('.slider');
 let startX;
 let startTime;
 let currentIndex = 0;
-const swipeThreshold = 50; // 스와이프 감도 조정 임계값 (픽셀)
+const swipeThreshold = 1000; // 스와이프 감도 조정 임계값 (픽셀)
 
 slider.addEventListener("touchstart", touchStart);
 slider.addEventListener("touchmove", touchMove);
