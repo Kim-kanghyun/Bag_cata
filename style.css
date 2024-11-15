@@ -44,14 +44,11 @@ body {
 
 .bag-description {
     position: absolute;
-    top: 28%; /* 이미지 중간보다 약간 위 */
-    left: 10%; /* 화면 왼쪽으로 약간 오프셋 */
+    top: 10%; /* 이미지 중간보다 약간 위 */
+    left: 5%; /* 화면 왼쪽으로 약간 오프셋 */
     width: 150px;
-    color: #fff;
-    padding: 10px;
-    border-radius: 8px;
     opacity: 0;
-    transition: opacity 1s ease;
+    transition: opacity 1.2s ease;
     text-align: center;
 }
 
