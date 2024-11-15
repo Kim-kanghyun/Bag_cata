@@ -16,30 +16,35 @@ body {
 
 }
 
+
 .slider {
     display: flex;
     width: 100vw;
     height: 100vh;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth; /* 부드럽게 스크롤 되도록 설정 */
+    scroll-behavior: smooth;
 }
 
 .slide {
     min-width: 100%;
     height: 100vh;
-    scroll-snap-align: start; /* 슬라이드가 한 번에 정렬되도록 설정 */
+    scroll-snap-align: start;
+    position: relative; /* 각 슬라이드 내부를 기준으로 위치 설정 */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.slide img {
+.image-container {
+    position: relative; /* 이미지 컨테이너를 기준으로 배치 */
+    display: inline-block;
+}
+
+.image-container img {
     width: 100%;
-    height: 100%;
-    object-fit: contain;  /* 이미지가 비율을 유지하면서 전체가 보이도록 설정 */
-    background-color: #f4f4f4;
-    position: relative;
+    height: auto;
+    object-fit: contain;
 }
 
 .bag-description {
