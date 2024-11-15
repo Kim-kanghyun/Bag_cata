@@ -88,8 +88,11 @@ body {
 
 
 .bag-description5 {
-    top: 30%; /* Custom position for page 5 */
-    left: 15%;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 .line1 {
