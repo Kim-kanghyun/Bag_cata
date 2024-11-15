@@ -19,7 +19,6 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     position: relative;
     scroll-snap-type: x mandatory;
 }
