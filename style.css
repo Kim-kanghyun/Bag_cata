@@ -78,9 +78,7 @@ body {
 }
 
 .bag-description4 {
-    top: 20%; /* Custom position for page 4 */
-    left: 65%;
-    transform: translate(-50%, -50%);
+    transform: translate(185px, -220px);
 }  
 
 
