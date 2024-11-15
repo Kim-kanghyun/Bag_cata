@@ -23,6 +23,11 @@
     height: 150px;
 }
 
+#logo{
+    width:100px;
+    height: 30px;
+}
+
 body {
     font-family: Arial, sans-serif;
     display: flex;
