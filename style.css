@@ -70,13 +70,11 @@ body {
 }
 
 .bag-description2 {
-    transform: translate(-50%, -50%);
+    transform: translate(-185px, -220px);
 }
 
 .bag-description3 {
-    top: 24%; /* Custom position for page 5 */
-    left: 1.2%;
-    transform: translate(-50%, -50%);
+    transform: translate(-185px, -220px);
 }
 
 .bag-description4 {
