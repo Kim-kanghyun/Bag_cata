@@ -68,21 +68,25 @@ body {
 .bag-description1 {
     top: 28%; /* Custom position for page 3 */
     left: 1%;
+    transform: translate(-50%, -50%);
 }
 
 .bag-description2 {
     top: 22%; /* Custom position for page 4 */
     left: 1.2%;
+    transform: translate(-50%, -50%);
 }
 
 .bag-description3 {
     top: 24%; /* Custom position for page 5 */
     left: 1.2%;
+    transform: translate(-50%, -50%);
 }
 
 .bag-description4 {
     top: 20%; /* Custom position for page 4 */
     left: 65%;
+    transform: translate(-50%, -50%);
 }  
 
 
