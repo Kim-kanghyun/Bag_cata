@@ -16,7 +16,6 @@ body {
 
 }
 
-
 .slider {
     display: flex;
     width: 100vw;
@@ -27,25 +26,29 @@ body {
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
-    position: relative; /* 각 슬라이드 내부를 기준으로 위치 설정 */
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .image-container {
-    position: relative; /* 이미지 컨테이너를 기준으로 배치 */
-    display: inline-block;
+    position: relative;
+    width: 100%; /* 화면 너비에 맞춤 */
+    height: 100%; /* 화면 높이에 맞춤 */
+    overflow: hidden;
 }
 
 .image-container img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+    width: 100vw; /* 가로 비율을 화면 너비에 맞춤 */
+    height: auto; /* 세로 비율을 유지 */
+    max-height: 100vh; /* 화면 높이를 초과하지 않도록 제한 */
+    object-fit: contain; /* 이미지가 잘리지 않고 화면에 맞게 표시 */
 }
+
 
 .bag-description {
     position: absolute;
