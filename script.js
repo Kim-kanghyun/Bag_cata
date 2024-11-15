@@ -1,31 +1,24 @@
 const slider = document.querySelector('.slider');
 let startX;
-let currentTranslate = 0;
-let prevTranslate = 0;
 let currentIndex = 0;
 
-slider.addEventListener('touchstart', touchStart);
-slider.addEventListener('touchmove', touchMove);
-slider.addEventListener('touchend', touchEnd);
+slider.addEventListener("touchstart", touchStart);
+slider.addEventListener("touchend", touchEnd);
 
 function touchStart(event) {
     startX = event.touches[0].clientX;
-    prevTranslate = currentTranslate;
 }
 
-function touchMove(event) {
-    const currentX = event.touches[0].clientX;
-    const deltaX = currentX - startX;
-    currentTranslate = prevTranslate + deltaX;
-    slider.style.transform = `translateX(${currentTranslate}px)`;
-}
+function touchEnd(event) {
+    const slideWidth = slider.offsetWidth;
+    const deltaX = startX - event.changedTouches[0].clientX;
 
-function touchEnd() {
-    const slideWidth = window.innerWidth;
-    currentIndex = -Math.round(currentTranslate / slideWidth);
-    currentIndex = Math.max(0, Math.min(currentIndex, slider.children.length - 1));
-    currentTranslate = -currentIndex * slideWidth;
-    slider.style.transform = `translateX(${currentTranslate}px)`;
+    // 슬라이드 변경을 위한 임계값 (필요 시 조정 가능)
+    if (Math.abs(deltaX) > slideWidth / 4) {
+        currentIndex += deltaX > 0 ? 1 : -1;
+        currentIndex = Math.max(0, Math.min(currentIndex, slider.children.length - 1));
+        slider.scrollLeft = currentIndex * slideWidth;
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -42,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     const line = entry.target.querySelector(".line");
                     if (description && line) {
                         description.style.opacity = "1";
-                       // line.style.opacity = "1";
+                        line.style.opacity = "1";
                     }
                 }
             } else {
