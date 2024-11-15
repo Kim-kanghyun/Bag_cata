@@ -44,10 +44,9 @@ body {
 
 .bag-description {
     position: absolute;
-    top: 35%; /* 이미지 중간보다 약간 위 */
-    left: 20%; /* 화면 왼쪽으로 약간 오프셋 */
+    top: 28%; /* 이미지 중간보다 약간 위 */
+    left: 10%; /* 화면 왼쪽으로 약간 오프셋 */
     width: 150px;
-    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 10px;
     border-radius: 8px;
