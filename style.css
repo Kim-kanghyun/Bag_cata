@@ -45,7 +45,6 @@ body {
     height: 100vh;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
     scroll-behavior: smooth; /* 부드럽게 스크롤 되도록 설정 */
 }
 
