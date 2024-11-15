@@ -55,8 +55,7 @@ body {
     top: 70%; /* 이미지 컨테이너 높이의 70% 위치 */
     left: 50%; /* 이미지 컨테이너 너비의 50% 위치 */
     transform: translate(-50%, -50%);
-    width: auto;
-    text-align: center;
+    width: 150px;
 }
 
 .line {
