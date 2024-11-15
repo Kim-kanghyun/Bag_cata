@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 let startX;
 let currentIndex = 0;
-const swipeThreshold = 100; // 스와이프 거리 임계값
+const swipeThreshold = 50; // 스와이프 감도를 조절하기 위해 임계값을 50px로 낮춤
 
 slider.addEventListener("touchstart", touchStart);
 slider.addEventListener("touchmove", touchMove);
@@ -15,7 +15,7 @@ function touchMove(event) {
     const currentX = event.touches[0].clientX;
     const deltaX = startX - currentX;
 
-    // 스와이프하는 동안 실제 슬라이더를 이동하지 않고 시작 지점과 현재 위치의 차이만 계산
+    // 스와이프 이동 중 화면 위치 변경을 하지 않고, 터치 끝에서만 처리
 }
 
 function touchEnd(event) {
@@ -34,9 +34,8 @@ function touchEnd(event) {
         currentIndex = Math.max(0, Math.min(currentIndex, slider.children.length - 1));
     }
 
-    // 현재 슬라이드 위치로 스냅 (한 페이지씩 이동)
-    const slideWidth = slider.offsetWidth;
-    slider.scrollLeft = currentIndex * slideWidth;
+    // 현재 슬라이드 위치로 스크롤 이동 (한 페이지씩 이동, 애니메이션 포함)
+    slider.children[currentIndex].scrollIntoView({ behavior: 'smooth' });
 }
 
 document.addEventListener("DOMContentLoaded", function () {
