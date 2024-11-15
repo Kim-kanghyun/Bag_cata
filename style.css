@@ -45,9 +45,9 @@ body {
 
 .bag-description {
     position: absolute;
-    top: 70%; /* 이미지 컨테이너 높이의 70% 위치 */
+    top: 50%; /* 이미지 컨테이너 높이의 70% 위치 */
     left: 50%; /* 이미지 컨테이너 너비의 50% 위치 */
-    width: 30%;
+    width: 150px;
     opacity: 0;
     transition: opacity 1s ease;
 }
@@ -55,7 +55,7 @@ body {
 .line {
     position: absolute;
     top: 50%;
-    left: 20%;
+    left: 50%;
     width: 1px;
     height: 80px; /* 선의 길이 조정 */
     background-color: #000;
@@ -66,14 +66,10 @@ body {
 
 
 .bag-description1 {
-    top: 28%; /* Custom position for page 3 */
-    left: 1%;
-    transform: translate(-50%, -50%);
+    transform: translate(-200px, -100px);
 }
 
 .bag-description2 {
-    top: 22%; /* Custom position for page 4 */
-    left: 1.2%;
     transform: translate(-50%, -50%);
 }
 
