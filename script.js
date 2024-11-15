@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 let startX;
 let currentIndex = 0;
-const swipeThreshold = 150; // 스와이프 감도를 조절하기 위해 임계값을 50px로 낮춤
+const swipeThreshold = 1500; // 스와이프 감도를 조절하기 위해 임계값을 50px로 낮춤
 
 slider.addEventListener("touchstart", touchStart);
 slider.addEventListener("touchmove", touchMove);
