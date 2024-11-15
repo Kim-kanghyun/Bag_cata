@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 let startX;
 let isDragging = false;
-const swipeThreshold = 400; // 스와이프 거리 임계값 (100px로 설정, 필요에 따라 조정)
+const swipeThreshold = 1000; // 스와이프 거리 임계값 (100px로 설정, 필요에 따라 조정)
 
 slider.addEventListener("touchstart", touchStart);
 slider.addEventListener("touchmove", touchMove);
