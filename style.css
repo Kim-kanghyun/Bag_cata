@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
-p{
+#pd{
     font-family: "Playfair Display",serif;
+}
+
+#small{
+    font-size: 5pt;
 }
 
 #map{
