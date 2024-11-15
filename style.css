@@ -10,7 +10,8 @@ p{
 }
 
 #map{
-    width:270px;
+    width:250px;
+    height: 100px;
 }
 
 body {
