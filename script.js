@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     const description = entry.target.querySelector(".bag-description");
                     const line = entry.target.querySelector(".line");
                     if (description && line) {
-                       // description.style.opacity = "1";
-                        line.style.opacity = "1";
+                        description.style.opacity = "1";
+                       // line.style.opacity = "1";
                     }
                 }
             } else {
