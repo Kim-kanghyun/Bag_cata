@@ -1,0 +1,119 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* 이미지가 비율을 유지하면서 전체가 보이도록 설정 */
+    background-color: #f4f4f4;
+}
+
+.bag-description {
+    position: absolute;
+    top: 35%; /* 이미지 중간보다 약간 위 */
+    left: 20%; /* 화면 왼쪽으로 약간 오프셋 */
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    text-align: center;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 1px;
+    height: 80px; /* 선의 길이 조정 */
+    background-color: #000;
+    transform: rotate(-30deg); /* 각도 조정해서 가방과 설명 연결 */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.bag-description1 {
+    top: 35%; /* Custom position for page 3 */
+    left: 20%;
+}
+
+.bag-description2 {
+    top: 40%; /* Custom position for page 4 */
+    left: 25%;
+}
+
+.bag-description3 {
+    top: 30%; /* Custom position for page 5 */
+    left: 15%;
+}
+
+.line1 {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 2px;
+    height: 80px;
+    background-color: #000;
+    transform: rotate(-30deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.line2 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 2px;
+    height: 80px;
+    background-color: #000;
+    transform: rotate(-20deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.line3 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 2px;
+    height: 80px;
+    background-color: #000;
+    transform: rotate(-10deg);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
