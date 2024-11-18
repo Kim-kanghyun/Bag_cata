@@ -70,7 +70,7 @@ body {
     position: absolute;
     top: 50%; /* 이미지 컨테이너 높이의 70% 위치 */
     left: 50%; /* 이미지 컨테이너 너비의 50% 위치 */
-    width: 130px;
+    width: 140px;
     opacity: 0;
     transition: opacity 1s ease;
 }
