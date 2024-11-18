@@ -89,6 +89,7 @@ body {
 
 
 .bag-description1 {
+    width: 139px;
     transform: translate(-198px, -200px);
 }
 
@@ -101,7 +102,7 @@ body {
 }
 
 .bag-description4 {
-    transform: translate(55px, -220px);
+    transform: translate(53px, -220px);
 }  
 
 
